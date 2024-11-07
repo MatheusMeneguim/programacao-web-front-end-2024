@@ -14,6 +14,6 @@ Este é o primeiro projeto prático da disciplina **Programação Web Front-End*
 - Promover um serviço voltado para a comunidade e/ou um objetivo sustentável.
 
 ## Integrantes da Equipe
-- Nome do Integrante 1 - [Link para o currículo](#)
-- Nome do Integrante 2 - [Link para o currículo](#)
-- Nome do Integrante 3 - [Link para o currículo](#)
+- Matheus Faustino Meneguim - [Link para o currículo](#)
+- Murilo Silva Vargas - [Link para o currículo](#)
+
