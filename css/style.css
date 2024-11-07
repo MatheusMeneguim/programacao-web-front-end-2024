@@ -12,7 +12,7 @@ body {
 
 body::before {
     content: "";
-    background-image: url('lixo.jpg'); /* Caminho para a imagem */
+    background-image: url('imagens/lixo.jpg'); /* Caminho para a imagem */
     background-size: cover; /* Cobre toda a área do body */
     background-position: center; /* Centraliza a imagem */
     position: absolute; /* Faz a imagem ocupar a posição absoluta */
