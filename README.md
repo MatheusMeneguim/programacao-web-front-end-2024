@@ -1,10 +1,10 @@
 # Programação Web Front-End - UTFPR (2024/02)
 
-# Meu Projeto - Programação Web Front-End
+## Acesse o Site 🚀
 
-Aqui está o link para o meu site hospedado no GitHub Pages:
+Clique no link abaixo para visitar o meu site no GitHub Pages:
+[🌐 Visite o nosso site!](https://matheus.github.io/programacao-web-front-end-2024/)
 
-[Visite o nosso site!](https://matheus.github.io/programacao-web-front-end-2024/)
 
 ## Descrição do Projeto
 Este é o primeiro projeto prático da disciplina **Programação Web Front-End** ministrada pela professora **Rosangela de Fátima Pereira Marquesone**. O objetivo é criar uma aplicação web que aborde um problema de uma comunidade local ou esteja alinhada a um Objetivo de Desenvolvimento Sustentável (ODS).
