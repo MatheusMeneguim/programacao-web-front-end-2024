@@ -15,5 +15,5 @@ Este é o primeiro projeto prático da disciplina **Programação Web Front-End*
 
 ## Integrantes da Equipe
 - Matheus Faustino Meneguim - https://drive.google.com/drive/folders/1PKoJaHZH3ylIB8HT6VjdvgiyUp8weRv2?usp=drive_link(#)
-- Murilo Silva Vargas - [https://drive.google.com/drive/folders/1PKoJaHZH3ylIB8HT6VjdvgiyUp8weRv2?usp=drive_link](#)
+- Murilo Silva Vargas - https://drive.google.com/drive/folders/1PKoJaHZH3ylIB8HT6VjdvgiyUp8weRv2?usp=drive_link(#)
 
