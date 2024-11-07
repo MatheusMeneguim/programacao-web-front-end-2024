@@ -1,4 +1,3 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -7,21 +6,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative; /* Adiciona posicionamento relativo */
+    position: relative; 
 }
 
 body::before {
     content: "";
-    background-image: url('imagens/lixo.jpg'); /* Caminho para a imagem */
-    background-size: cover; /* Cobre toda a área do body */
-    background-position: center; /* Centraliza a imagem */
-    position: absolute; /* Faz a imagem ocupar a posição absoluta */
+    background-image: url('imagens/lixo.jpg');
+    background-size: cover; 
+    background-position: center;
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.3; /* Define a opacidade */
-    z-index: -1; /* Coloca a imagem atrás de outros elementos */
+    opacity: 0.3; 
+    z-index: -1; 
 }
 
 header {
@@ -51,7 +50,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-top: 20px;
-    padding-bottom: 60px; /* Adiciona um espaço para evitar que o rodapé sobreponha */
+    padding-bottom: 60px; 
 }
 
 section {
@@ -117,7 +116,7 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100%;
-    position: relative; /* Alterado de fixed para relative */
+    position: relative; 
 }
 
 footer p {
@@ -130,25 +129,25 @@ footer a {
 }
 
 #cta {
-    background-color: #ffccbc; /* Cor de fundo laranja claro */
-    border: 2px solid #ff5722; /* Borda laranja */
-    padding: 20px; /* Espaçamento interno */
-    margin: 20px 0; /* Margem superior e inferior */
-    text-align: center; /* Centraliza o texto */
-    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #ffccbc; 
+    border: 2px solid #ff5722; 
+    padding: 20px; 
+    margin: 20px 0; 
+    text-align: center; 
+    border-radius: 10px; 
 }
 
 #cta h2 {
-    color: #ff5722; /* Cor do título */
+    color: #ff5722; 
 }
 
 #cta p {
-    font-size: 1.2em; /* Aumenta o tamanho da fonte */
-    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+    font-size: 1.2em; 
+    line-height: 1.5; 
 }
 
 
-/* Responsividade */
+
 @media (max-width: 600px) {
     main {
         margin-top: 10px;
