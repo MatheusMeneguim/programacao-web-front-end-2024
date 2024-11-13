@@ -11,7 +11,7 @@ body {
 
 body::before {
     content: "";
-    background-image: url('imagens/lixo.jpg');
+    background-image: url('../imagens/lixo.jpg');
     background-size: cover; 
     background-position: center;
     position: absolute; 
@@ -133,7 +133,7 @@ footer a {
     text-decoration: underline;
 }
 footer {
-    background-color: #007bff; /* Altere conforme sua preferência */
+    background-color: #007bff; 
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -211,7 +211,6 @@ footer {
     }
 }
 
-/* Menu de Navegação */
 nav {
     background-color: #ffffff00;
     padding: 10px 0;
