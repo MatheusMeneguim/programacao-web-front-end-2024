@@ -11,7 +11,7 @@ body {
 
 body::before {
     content: "";
-    background-image: url('../imagens/lixo.jpg');
+    background-image: url('../imagens/lixobackground.jpg');
     background-size: cover; 
     background-position: center;
     position: absolute; 
