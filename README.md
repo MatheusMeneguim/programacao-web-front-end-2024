@@ -1,6 +1,6 @@
 # Programação Web Front-End - UTFPR (2024/02)
 
-## Acesse o Site 🚀
+## Acesse o Site - Descarte Consciente 🚀
 
 Clique no link abaixo para visitar o meu site no GitHub Pages:
 [🌐 Visite o nosso site!](https://matheusmeneguim.github.io/programacao-web-front-end-2024/)
