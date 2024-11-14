@@ -10,7 +10,8 @@ Ongoing - em progresso
 Faltando implementação apenas do javascript para uma interface e navegação do menu, de forma mais interativa e visualmente mais chamativa.
 
 ## Descrição do Projeto
-Este é o primeiro projeto prático da disciplina **Programação Web Front-End** ministrada pela professora **Rosangela de Fátima Pereira Marquesone**. O site contém diversas funcionalidades,sendo elas:
+Este é o primeiro projeto prático da disciplina **Programação Web Front-End** ministrada pela professora **Rosangela de Fátima Pereira Marquesone**. O website contém diversas funcionalidades,sendo elas:
+
   • Login e Cadastro: Permite aos usuários criar uma conta e acessar informações personalizadas.
   
   • Informações sobre Lixo Eletrônico: Explica o que é lixo eletrônico, seus impactos ambientais, e a importância de seu descarte.
