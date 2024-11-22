@@ -26,6 +26,9 @@ Este é o primeiro projeto prático da disciplina **Programação Web Front-End*
 
   
 O objetivo é criar uma aplicação web que aborde um problema de uma comunidade local ou esteja alinhada a um Objetivo de Desenvolvimento Sustentável (ODS).
+ODS Atendida 
+12 - Consumo e Produção responsável
+13 - Ação contra a mudança global do clima
 
 ## Estrutura do Projeto
 - `index.html`: Página principal do site, com cabeçalho, rodapé, menu de navegação e informações sobre o serviço proposto.
