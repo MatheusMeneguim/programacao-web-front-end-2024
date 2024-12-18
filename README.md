@@ -5,10 +5,6 @@
 Clique no link abaixo para visitar o meu site no GitHub Pages:
 [🌐 Visite o nosso site!](https://matheusmeneguim.github.io/programacao-web-front-end-2024/)
 
-## Status do Projeto
-Ongoing - em progresso
-Faltando implementação apenas do javascript para uma interface e navegação do menu, de forma mais interativa e visualmente mais chamativa.
-
 ## Descrição do Projeto
 Este é o primeiro projeto prático da disciplina **Programação Web Front-End** ministrada pela professora **Rosangela de Fátima Pereira Marquesone**. O website contém diversas funcionalidades,sendo elas:
 
@@ -36,10 +32,11 @@ ODS Atendida
 - `index.html`: Página principal do site, com cabeçalho, rodapé, menu de navegação e informações sobre o serviço proposto.
 - `cadastro.html`: Página de cadastro com um formulário contendo cinco campos e um botão de envio.
 - `css/style.css`: Arquivo de estilização para as páginas usando CSS.
+- `scripts/script.js`: Arquivo para a utilização de scripts em JS.
 - `imagens/`: Pasta com ícones e outras imagens usadas no site.
 
 ## Objetivos
-- Desenvolver um layout web usando HTML e CSS.
+- Desenvolver um layout web usando HTML/CSS e JavaScript
 - Promover um serviço voltado para a comunidade e/ou um objetivo sustentável.
 
 ## Integrantes da Equipe
