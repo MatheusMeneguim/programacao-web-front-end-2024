@@ -1,49 +1,92 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('admin-form');
-    const userList = document.getElementById('user-list');
-    const localStorageKey = 'userListData';
+const form = document.getElementById('userForm');
+const listaUsuarios = document.getElementById('listaUsuarios');
+const limparCamposBtn = document.getElementById('limparCampos');
+const excluirTodosBtn = document.getElementById('excluirTodos');
+const pesquisaInput = document.getElementById('pesquisa');
+const pesquisarBtn = document.getElementById('pesquisarBtn');
 
-    // Função para carregar usuários salvos no Local Storage
-    function loadUsers() {
-        const savedUsers = JSON.parse(localStorage.getItem(localStorageKey)) || [];
-        savedUsers.forEach((user) => addUserToList(user));
-    }
+// Carregar usuários do Local Storage ao iniciar
+window.onload = () => {
+    carregarUsuarios();
+};
 
-    // Função para adicionar um usuário à lista na interface
-    function addUserToList(user) {
-        const listItem = document.createElement('li');
-        listItem.textContent = `Data: ${user.date}, Nome: ${user.name}, E-mail: ${user.email}`;
-        userList.appendChild(listItem);
-    }
+// Evento de submissão do formulário
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const data = new Date().toLocaleString();
 
-    // Função para salvar usuário no Local Storage
-    function saveUser(user) {
-        const savedUsers = JSON.parse(localStorage.getItem(localStorageKey)) || [];
-        savedUsers.push(user);
-        localStorage.setItem(localStorageKey, JSON.stringify(savedUsers));
-    }
+    const usuario = { data, nome, email };
 
-    // Evento de envio do formulário
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
+    salvarUsuario(usuario);
+    exibirUsuario(usuario);
+    form.reset();
+});
 
-        const name = document.getElementById('nome').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const date = new Date().toLocaleString();
+// Salva o usuário no Local Storage
+function salvarUsuario(usuario) {
+    let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+    usuarios.push(usuario);
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+}
 
-        if (name && email) {
-            const newUser = { name, email, date };
-            saveUser(newUser);  // Salvar no Local Storage
-            addUserToList(newUser); // Exibir na interface
+// Exibe um usuário na lista
+function exibirUsuario(usuario) {
+    const li = document.createElement('li');
+    li.innerHTML = `
+        <strong>Data:</strong> ${usuario.data}, 
+        <strong>Nome:</strong> ${usuario.nome}, 
+        <strong>E-mail:</strong> ${usuario.email}
+        <button class="excluir-item">Excluir</button>
+    `;
 
-            // Limpar formulário
-            form.reset();
-            alert('Usuário cadastrado com sucesso!');
-        } else {
-            alert('Por favor, preencha todos os campos!');
-        }
+    // Botão para excluir individualmente
+    li.querySelector('.excluir-item').addEventListener('click', () => {
+        excluirUsuario(usuario);
+        li.remove();
     });
 
-    // Carregar usuários ao inicializar
-    loadUsers();
+    listaUsuarios.appendChild(li);
+}
+
+// Carrega todos os usuários salvos
+function carregarUsuarios() {
+    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+    listaUsuarios.innerHTML = '';
+    usuarios.forEach(exibirUsuario);
+}
+
+// Exclui todos os usuários
+excluirTodosBtn.addEventListener('click', () => {
+    if (confirm('Tem certeza que deseja excluir todos os usuários?')) {
+        localStorage.removeItem('usuarios');
+        listaUsuarios.innerHTML = '';
+    }
+});
+
+// Exclui um usuário específico
+function excluirUsuario(usuarioExcluido) {
+    let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+    usuarios = usuarios.filter(usuario => usuario.data !== usuarioExcluido.data);
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+}
+
+// Botão de limpar campos
+limparCamposBtn.addEventListener('click', () => {
+    form.reset();
+});
+
+// Pesquisa na lista de usuários
+pesquisarBtn.addEventListener('click', () => {
+    const termo = pesquisaInput.value.toLowerCase();
+    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+    const resultados = usuarios.filter(usuario =>
+        usuario.nome.toLowerCase().includes(termo) ||
+        usuario.email.toLowerCase().includes(termo)
+    );
+
+    listaUsuarios.innerHTML = '';
+    resultados.forEach(exibirUsuario);
 });

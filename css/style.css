@@ -266,3 +266,38 @@ nav ul li a:hover {
     background-color: #e64a19;
     transform: scale(1.03);
 }
+
+.actions {
+    margin: 15px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.actions input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.actions button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover {
+    background-color: #0056b3;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

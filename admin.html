@@ -13,30 +13,35 @@
     </header>
 
     <main>
-        <section>
-            <h2>Cadastrar Novo Usuário</h2>
-            <form id="admin-form">
+        <div class="form-container">
+            <form id="userForm">
                 <label for="nome">Nome do Usuário:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
-
+                <input type="text" id="nome" placeholder="Digite o nome" required>
+                
                 <label for="email">E-mail do Usuário:</label>
-                <input type="email" id="email" name="email" placeholder="Digite o e-mail" required>
-
-                <button type="submit">Cadastrar</button>
-                <a href="inicial.html" class="back-button">Voltar</a>
+                <input type="email" id="email" placeholder="Digite o e-mail" required>
+                
+                <div class="button-container">
+                    <button type="submit" id="cadastrar">Cadastrar</button>
+                    <button type="button" id="limparCampos">Limpar</button>
+                    <a href="inicial.html" class="back-button">Voltar</a>
+                </div>
             </form>
-        </section>
-
-        <section>
-            <h2>Usuários Cadastrados</h2>
-            <ul id="user-list">
-                <!-- Lista de usuários será gerada dinamicamente -->
-            </ul>
-        </section>
+        </div>
+        
+        <div class="actions">
+            <input type="text" id="pesquisa" placeholder="Pesquisar...">
+            <button id="pesquisarBtn">Pesquisar</button>
+            <button id="excluirTodos">Excluir Todos</button>
+        </div>
+        
+        <h3>Usuários Cadastrados</h3>
+        <ul id="listaUsuarios"></ul>
+        
     </main>
 
     <footer>
-        <p>&copy; 2024 Seu Projeto. Todos os direitos reservados.</p>
+        <p>&copy; 2024 - Projeto de Front-end</p>
     </footer>
 
     <script src="scripts/admin.js"></script>
