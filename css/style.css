@@ -242,3 +242,27 @@ nav ul li a:hover {
     background-color: #007BFF;
     border-radius: 5px;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #ff5722;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #e64a19;
+    transform: scale(1.03);
+}
