@@ -16,26 +16,24 @@
         <!-- Sessão de Cadastro -->
         <section id="cadastro">
             <h2>Cadastro</h2>
-            <form action="inicial.html" method="GET">     
-                <label for="cadastro-nome">Nome e Sobrenome:</label>
-                <input type="text" id="cadastro-nome" name="cadastro-nome" required>
+                <form id="register-form">
+                    <label for="register-username">Usuário:</label>
+                    <input type="text" id="register-username" required>
 
-                <label for="cadastro-username">Nome do usuário:</label>
-                <input type="text" id="cadastro-username" name="cadastro-username" required>
-                
-                <label for="cadastro-email">Email:</label>
-                <input type="email" id="cadastro-email" name="cadastro-email" required>
+                    <label for="register-password">Senha:</label>
+                    <input type="password" id="register-password" required>
 
-                <label for="cadastro-telefone">Telefone:</label>
-                <input type="tel" id="cadastro-telefone" name="cadastro-telefone" required>
-                
-                <label for="cadastro-password">Senha:</label>
-                <input type="password" id="cadastro-password" name="cadastro-password" required>
-            
-                <button type="submit">Cadastrar</button>
-                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
-                <p><a href="inicial.html">Acessar sem cadastro</a></p>
-            </form>
+                    <label for="register-email">E-mail:</label>
+                    <input type="email" id="register-email" required>
+
+                    <label for="register-name">Nome Completo:</label>
+                    <input type="text" id="register-name" required>
+
+                    <label for="register-age">Idade:</label>
+                    <input type="number" id="register-age" required>
+
+                    <button type="button" onclick="registerUser()">Registrar</button>
+                </form>
         </section>
     </main>
     
@@ -52,5 +50,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/secureConf.js"></script>
 </body>
 </html>

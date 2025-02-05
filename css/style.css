@@ -301,3 +301,8 @@ nav ul li a:hover {
     gap: 10px;
     justify-content: center;
 }
+.logout-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;             
+}
